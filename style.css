@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.input-group label {
+  display: block;
+  margin-top: 8px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: pink;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px;
+}
+
+.login-btn {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 6px;
+  background-color: pink;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background-color: rgb(182, 27, 87);
+  transition: 0.4s;
+}
