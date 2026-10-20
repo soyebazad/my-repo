@@ -5,55 +5,59 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #fff;
+  font-family: "Gill Sans", "Trebuchet MS", Arial, sans-serif;
 }
 
-.container {
-  background-color: whitesmoke;
-  padding: 20px;
-  border: none;
-  border-radius: 10px;
+.window {
+  width: 470px;
+  height: 280px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
 }
 
-.input-group label {
-  display: block;
-  margin-top: 8px;
-}
-
-.input-box {
+.relative-box {
   position: relative;
+  width: 361px;
+  height: 186px;
+  margin-left: 55px;
+  margin-top: 46px;
+  border: 3px solid #323130;
 }
 
-.input-box i {
+.relative-box h1 {
   position: absolute;
+  top: 8px;
+  left: 85px;
+  font-size: 22px;
+  font-weight: normal;
+  color: #1b81b4;
+}
+
+.abs-box {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  padding: 8px;
+  background: #76001d;
+  color: #fff;
+  font-size: 8px;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.top-left {
+  top: 0;
+  left: 0;
+}
+.bottom-left {
+  bottom: 5px;
   left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: pink;
 }
-
-.input-box input {
-  width: 100%;
-  padding: 12px 40px;
-}
-
-.login-btn {
-  cursor: pointer;
-  margin-top: 30px;
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border-radius: 6px;
-  background-color: pink;
-  color: whitesmoke;
-  font-weight: 600;
-}
-
-.login-btn:hover {
-  background-color: rgb(182, 27, 87);
-  transition: 0.4s;
+.right-side {
+  top: 30%;
+  right: -25px;
 }
